@@ -12,7 +12,7 @@ public class WordList
   {
    int sum = 0;
     for(int i = 0; i < myList.size(); i++)
-      if(myList.et(i) == len){
+      if((myList.get(i)).length == len){
         sum++;
       }
     return sum;
@@ -21,7 +21,7 @@ public class WordList
   public void removeWordsOfLength(int len)
   {
     for(int i = 0; i < myList.size(); i++)
-       if(myList.get(i) == len) {
+       if((myList.get(i)).length == len) {
          myList.remove(i);
        }
   return myList
